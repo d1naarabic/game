@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora:ital,wght@1,400;1,500&family=Montserrat:ital@0;1&family=Raleway:ital,wght@1,500&family=Roboto:ital,wght@1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--lato);
+}
+a {
+  color: black;
+}
+:root {
+  --lato: "Lato", sans-serif;
+  --lora: "Lora", serif;
+  --monester: "Montserrat", sans-serif;
+  --real: "Raleway", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+body {
+  line-height: 1.5;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+
+  background-size: 100% 100%;
+}
+.navigation {
+  width: 100%px;
+  height: 10vh;
+}
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  transform: scale(1.5);
+}
+.navbar__nav a {
+  height: 1.3rem;
+  margin-left: 15px;
+  margin-right: 15px;
+  letter-spacing: 1px;
+  font-family: var(--monester);
+  font-weight: 900;
+  transition: all 0.5s linear;
+}
+.navbar__nav a:hover {
+  color: rgba(255, 98, 0);
+}
+.navbar__nav button {
+  margin-left: 15px;
+  margin-right: 15px;
+  letter-spacing: 1px;
+  font-family: var(--lora);
+  font-weight: 900;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+.navbar__nav button:hover {
+  color: rgb(0, 0, 0);
+  background-color: yellow;
+}
+
+.banner__content {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner__content span {
+  color: palevioletred;
+  font-family: var(--lora);
+  padding: 5px 10px;
+  background-color: antiquewhite;
+}
+.banner__content h1 {
+  font-size: 4.5rem;
+  font-family: var(--real);
+  color: #af6565;
+}
+.banner__content p {
+  font-family: var(--real);
+  font-size: 1.2rem;
+  font-weight: 900;
+  opacity: 0.7;
+}
+.banner__content button {
+  padding: 4px 10px;
+  font-size: 1rem;
+  color: black;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: var(--monester);
+  margin-top: 1rem;
+  margin-left: 15px;
+  transition: all 0.5s linear;
+  font-family: var(--lora);
+}
+.banner__content button:hover {
+  background-color: aqua;
+  color: coral;
+}
+.features {
+  width: 100%;
+  padding: 4rem 0;
+ 
+}
+.features .title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.features .title h2 {
+  font-size: 4rem;
+  font-family: var(--real);
+  letter-spacing: 1px;
+  color: #af6565;
+  text-align: center;
+}
+.title span {
+  color: blue;
+  padding: 5px 10px;
+  background-color: rgb(222, 240, 245);
+  font-family: var(--lora);
+}
+.title p {
+  font-family: var(--real);
+  font-size: 1.2rem;
+  font-weight: 900;
+  opacity: 0.7;
+}
+.features__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+ margin-top: 5rem;
+}
+.features__content .item{
+    text-align: center;
+}
+.features__content .item i {
+    font-size: 2rem;
+    background-color: lightsalmon;
+    padding: 5px 10px;
+    border-radius: 100%;
+ 
+}
+.features__content .item h2 {
+  font-family: var(--monester);
+}
+.features__content .item p {
+  opacity: 0.6;
+  font-family: var(--real);
+}
+
+
+
+.our{
+    width: 100%;
+  padding: 4rem 0;
+}
+.our__content{
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  gap: 3REM;
+}
+.our__content span{
+    color: palevioletred;
+  font-family: var(--lora);
+  padding: 5px 10px;
+  background-color: antiquewhite;
+}
+.our__content h2{
+    font-size: 2rem;
+  font-family: var(--real);
+  letter-spacing: 1px;
+  color: #000000;
+ 
+}
+.our__content p{
+    opacity: 0.6;
+    font-family: var(--real);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width:80%;
+}
+.our__content h3{
+    color: blue;
+    opacity: 0.5;
+}
+.our__content button{
+    padding: 4px 10px;
+  font-size: 1rem;
+  color: black;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: var(--monester);
+  margin-top: 1rem;
+  margin-left: 15px;
+  transition: all 0.5s linear;
+  font-family: var(--lora);
+}
+.our__content button:hover{
+    background-color: blue;
+}
+
+
+.servic__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+   margin-top: 5rem;
+   border: 1px solid rgb(255, 233, 233);
+   width: 80%;
+   margin: 0 auto;
+   padding: 12px 12px;
+}
+.servic__content .item i{
+    font-size: 3rem;
+    background-color: lightsalmon;
+    padding: 5px 10px;
+    border-radius: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.servic__content .item h2{
+    font-family: var(--monester);
+}
+.servic .title{
+text-align: center;
+margin-bottom: 3rem;
+}
+.servic .title h2{
+  font-size: 3rem;
+  font-family: var(--lora);
+color: #af6565;
+
+}
+.servic__content p{
+font-size: 1rem;
+}
+.servic__content .item{
+display: grid;
+grid-template-columns: 20% 80%;
+gap: 1.5rem;
+}
+
+.testimonial{
+  width: 100%;
+  padding: 4rem 0;
+
+}
+.testimonial .title{
+  text-align: center;
+}
+.testimonial .title span{
+  color: palevioletred;
+  font-family: var(--lora);
+  padding: 5px 10px;
+  background-color: antiquewhite;
+  font-size: 0.5rem;
+}
+.testimonial .title h2{
+  font-size: 2rem;
+  font-family: var(--real);
+  letter-spacing: 1px;
+  color: #5b4be9;
+}
+.testimonial__content .item__title img{
+ width: 10%;
+ border-radius: 100%;
+}
+.testimonial__content{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+gap: 2rem;
+}
+.testimonial__content .item .item__title{
+  display: flex;
+  gap: 2rem;
+margin-top: 1rem;
+
+}
+.testimonial__content .item{
+  border: #ce2121;
+  padding: 10px 10px;
+  background-color: #cfadad;
+}
+.testimonial__content .item .item__title h2{
+  display: block;
+}
+.about{
+  width: 100%;
+  padding: 4rem 0;
+}
+.about__content{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+gap: 2rem;
+}
+.about__content .item h2{
+  font-size: 2rem;
+  font-family: var(--lora);
+  color: #0b48ca;
+  transition: all 0.5s linear;
+}
+.about__content .item p{
+  margin-top: 1rem;
+  font-family: var(--real);
+}
+.about__content .item i{
+ margin-left: 6px;
+ font-size: 1.5rem;
+ margin-top: 1rem;
+ color: #0b48ca;
+}
+.about__content .item a{
+display: block;
+margin-top: 10px;
+font-family: var(--real);
+}
+.about__content .item h2:hover{
+  color: palevioletred;
+  
+}
+
+.copyright p{
+  text-align: center;
+  font-family: var(--roboto);
+  color: tomato;
+  padding: 4rem 0;
+  width: 100%;
+}
